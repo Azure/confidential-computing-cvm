@@ -2,6 +2,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env: 
+      CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
     steps: 
     - uses: actions/checkout@v1
     - uses: actions/setup-dotnet@v1
@@ -10,6 +12,6 @@ jobs:
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         folder: '' # All files and subfolders found in the specified folder will be uploaded.
-        connection-string: ${{ secrets.CONNECTION_STRING }}
+        connection-string: $CONNECTION_STRING
         public-access-policy: BlobContainer # BlobContainer | Blob | None
         blob-container-name: 'test'
