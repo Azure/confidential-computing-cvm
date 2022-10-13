@@ -1,17 +1,20 @@
-on: [push]
+name: Upload To Azure Blob Storage
+on:
+  push:
+    branches:
+      - main
 jobs:
-  build:
+  upload:
     runs-on: ubuntu-latest
     env: 
-      CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
-    steps: 
-    - uses: actions/checkout@v3
-    - uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '3.1.x'
-    - uses: lauchacarro/Azure-Storage-Action@v1.1
-      with:
-        folder: '' # All files and subfolders found in the specified folder will be uploaded.
-        connection-string: $CONNECTION_STRING
-        public-access-policy: BlobContainer # BlobContainer | Blob | None
-        blob-container-name: 'test'
+      CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bacongobbler/azure-blob-storage-upload@main
+        with:
+          source_dir: ''
+          container_name: 'test'
+          connection_string: $CONNECTION_STRING
+          extra_args: '--pattern *.tar.gz'
+          # WARNING: this will overwrite existing blobs in your blob storage
+          overwrite: 'true'
