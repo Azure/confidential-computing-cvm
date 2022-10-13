@@ -9,7 +9,7 @@ jobs:
     env: 
       CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}    
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
           source_dir: ''
