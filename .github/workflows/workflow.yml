@@ -5,10 +5,10 @@ jobs:
     env: 
       CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
     steps: 
-    - uses: actions/checkout@v1
-    - uses: actions/setup-dotnet@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '3.1.100'
+        dotnet-version: '3.1.x'
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         folder: '' # All files and subfolders found in the specified folder will be uploaded.
