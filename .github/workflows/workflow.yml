@@ -9,7 +9,6 @@ jobs:
     - uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '3.1.x'
-    - name: Azure Storage Action 
     - uses: lauchacarro/Azure-Storage-Action@v1.1
       with:
         folder: '' # All files and subfolders found in the specified folder will be uploaded.
