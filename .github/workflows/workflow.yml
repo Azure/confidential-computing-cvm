@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: 'confidential-computing-cvm/cvm_deployment/key/'
+          source_dir: 'confidential-computing-cvm/cvm_deployment/key'
           container_name: 'test'
           connection_string: $CONNECTION_STRING
           extra_args: '--pattern *.tar.gz'
