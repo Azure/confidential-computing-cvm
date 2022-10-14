@@ -11,7 +11,7 @@ jobs:
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
           source_dir: 'cvm_deployment/key'
-          container_name: 'test'
+          container_name: test
           connection_string: ${{ secrets.CONNECTION_STRING }}
           extra_args: '--pattern *.tar.gz'
           # WARNING: this will overwrite existing blobs in your blob storage
