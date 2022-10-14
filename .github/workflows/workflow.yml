@@ -13,6 +13,7 @@ jobs:
           source_dir: 'cvm_deployment/key'
           container_name: test
           connection_string: ${{ secrets.CONNECTION_STRING }}
+          sas_token: ${{secrets.SAS_TOKEN}}
           extra_args: '--pattern *.tar.gz'
           # WARNING: this will overwrite existing blobs in your blob storage
           overwrite: 'true'
