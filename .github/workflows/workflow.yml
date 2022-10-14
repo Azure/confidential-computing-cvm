@@ -6,13 +6,11 @@ on:
 jobs:
   upload:
     runs-on: ubuntu-latest
-    env: 
-      CONNECTION_STRING: '${{ secrets.CONNECTION_STRING }}'    
     steps:
       - uses: actions/checkout@v3
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: cvm_development'
+          source_dir: cvm_development/key/skr-policy.json'
           container_name: 'test'
           connection_string: ${{ secrets.CONNECTION_STRING }}
           extra_args: '--pattern *.tar.gz'
