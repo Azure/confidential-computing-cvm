@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: 'cvm_deployment/key'
+          source_dir: '.'
           container_name: test
           connection_string: ${{ secrets.CONNECTION_STRING }}
           sas_token: ${{secrets.SAS_TOKEN}}
