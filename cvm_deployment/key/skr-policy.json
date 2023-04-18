@@ -51,6 +51,19 @@
         }
       ],
       "authority": "https://sharedweu.weu.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-attestation-type",
+          "equals": "sevsnpvm"
+        },
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        }
+      ],
+      "authority": "https://sharedsasia.sasia.attest.azure.net/"
     }
   ],
   "version": "1.0.0"
