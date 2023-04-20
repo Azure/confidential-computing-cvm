@@ -64,6 +64,32 @@
         }
       ],
       "authority": "https://sharedsasia.sasia.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-attestation-type",
+          "equals": "sevsnpvm"
+        },
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        }
+      ],
+      "authority": "https://sharedjpe.jpe.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-attestation-type",
+          "equals": "sevsnpvm"
+        },
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        }
+      ],
+      "authority": "https://sharedswn.swn.attest.azure.net/"
     }
   ],
   "version": "1.0.0"
