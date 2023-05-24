@@ -76,6 +76,19 @@
           "equals": "azure-compliant-cvm"
         }
       ],
+      "authority": "https://sharedeasia.easia.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-attestation-type",
+          "equals": "sevsnpvm"
+        },
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        }
+      ],
       "authority": "https://sharedjpe.jpe.attest.azure.net/"
     },
     {
