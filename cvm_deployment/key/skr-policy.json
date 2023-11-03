@@ -482,6 +482,27 @@
         }
       ],
       "authority": "https://sharedcin.cin.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        },
+        {
+          "anyOf": [
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "tdxvm"
+            },
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "sevsnpvm"
+            }
+          ]
+        }
+      ],
+      "authority": "https://shareduaen.uaen.attest.azure.net/"
     }
   ],
   "version": "1.0.0"
