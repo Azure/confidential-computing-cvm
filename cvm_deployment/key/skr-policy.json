@@ -68,18 +68,6 @@
         {
           "claim": "x-ms-compliance-status",
           "equals": "azure-compliant-cvm"
-        },
-        {
-          "anyOf": [
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "tdxvm"
-            },
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "sevsnpvm"
-            }
-          ]
         }
       ],
       "authority": "https://sharedweu.weu.attest.azure.net/"
@@ -194,18 +182,6 @@
         {
           "claim": "x-ms-compliance-status",
           "equals": "azure-compliant-cvm"
-        },
-        {
-          "anyOf": [
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "tdxvm"
-            },
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "sevsnpvm"
-            }
-          ]
         }
       ],
       "authority": "https://sharedeus2.eus2.attest.azure.net/"
@@ -215,18 +191,6 @@
         {
           "claim": "x-ms-compliance-status",
           "equals": "azure-compliant-cvm"
-        },
-        {
-          "anyOf": [
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "tdxvm"
-            },
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "sevsnpvm"
-            }
-          ]
         }
       ],
       "authority": "https://sharedeus2e.eus2e.attest.azure.net/"
@@ -270,18 +234,6 @@
         {
           "claim": "x-ms-compliance-status",
           "equals": "azure-compliant-cvm"
-        },
-        {
-          "anyOf": [
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "tdxvm"
-            },
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "sevsnpvm"
-            }
-          ]
         }
       ],
       "authority": "https://sharedcus.cus.attest.azure.net/"
@@ -291,18 +243,6 @@
         {
           "claim": "x-ms-compliance-status",
           "equals": "azure-compliant-cvm"
-        },
-        {
-          "anyOf": [
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "tdxvm"
-            },
-            {
-              "claim": "x-ms-attestation-type",
-              "equals": "sevsnpvm"
-            }
-          ]
         }
       ],
       "authority": "https://sharedeau.eau.attest.azure.net/"
