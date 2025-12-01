@@ -208,6 +208,27 @@
           ]
         }
       ],
+      "authority": "https://sharedilc.ilc.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        },
+        {
+          "anyOf": [
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "tdxvm"
+            },
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "sevsnpvm"
+            }
+          ]
+        }
+      ],
       "authority": "https://shareditn.itn.attest.azure.net/"
     },
     {
