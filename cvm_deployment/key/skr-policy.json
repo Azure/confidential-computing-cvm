@@ -860,6 +860,23 @@
           ]
         }
       ],
+      "authority": "https://sharedmxc.mxc.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        },
+        {
+          "anyOf": [
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "sevsnpvm"
+            }
+          ]
+        }
+      ],
       "authority": "https://sharednow.now.attest.azure.net/"
     },
     {
