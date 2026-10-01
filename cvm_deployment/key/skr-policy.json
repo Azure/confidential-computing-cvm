@@ -1194,6 +1194,23 @@
           ]
         }
       ],
+      "authority": "https://shareddke.dke.attest.azure.net/"
+    },
+    {
+      "allOf": [
+        {
+          "claim": "x-ms-compliance-status",
+          "equals": "azure-compliant-cvm"
+        },
+        {
+          "anyOf": [
+            {
+              "claim": "x-ms-attestation-type",
+              "equals": "sevsnpvm"
+            }
+          ]
+        }
+      ],
       "authority": "https://sharedfrs.frs.attest.azure.net/"
     }
   ],
